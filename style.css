@@ -70,3 +70,15 @@ body {
     );
   }
 }
+
+button {
+  position: fixed;
+  top: 100px;
+  right: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  .content h2 {
+  transform: rotate(-90deg);
+  }
+}
