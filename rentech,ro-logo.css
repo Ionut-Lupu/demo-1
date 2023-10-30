@@ -1,8 +1,15 @@
 :root {
     --font-600: font-family;
   }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
   
   body {
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -20,15 +27,19 @@
     margin: 0;
     color: #03a9f4;
     font-family: Raleway;
-    font-weight: 800;
-    
-    font-size: 20em;
+    font-size: 350px;
     color: transparent;
     background-image: url(../images/408636.jpg);
     
     -webkit-background-clip: text; /*for backgrount text img*/
     animation: animate 20s linear infinite;
     -webkit-text-stroke: 2px #03a9f4; /*for border-text*/
+  }
+
+  .buttons  {
+    position: absolute;
+    top: 100px;
+    right: 100px;
   }
   
 
@@ -43,4 +54,14 @@
   @media screen and (max-width: 480px) {
     .content h2 {
     transform: rotate(-90deg);
+   }
+
+   body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
+  }
+  
